@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* додаємо стилі для таблиці */
+        table, th, td {
+            border: 1px solid #000;  
+            text-align: center;
+            height: 30px;
+        }
+
+        table img {
+             vertical-align: middle;  /*  для прибиранння білих пробілів */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-table">
+        <table>
+            <thead>
+                <tr>
+                    <!-- oб'єднуємо стовпці у один рядок  -->
+                    <th colspan="4" > MY FIRST TABLE</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- трохи редактуємо ширину -->
+                    <td style="width: 100px;">First cell</td>
+                    <td style="width: 100px;"> Second cell</td>
+                    <td style="width: 200px;" colspan="2" rowspan="3">6 cells marged together </td> <!--  об'єднуємо стовпці і рядки -->
+                </tr>
+                <tr>
+                    <td colspan="2">2 cells into one</td> <!--  oб'єднуємо стовпці у один рядок  -->
+                </tr>
+                <tr>
+                    <td> 1st cell <br> 3rd row</td>
+                    <td> 2st cell <br> 3rd row</td>
+                </tr>
+                <tr>
+                    <td colspan="4"> Do you like tables</td> <!--  oб'єднуємо стовпці у один рядок  -->
+                </tr>
+            </tbody>
+            <tfoot> </tfoot>
+        </table>
+    </div>
+   
+<br>
+<br>
+<br>
+<div class="dog">
+    <table style="border-collapse: collapse;">
+        <tbody>
+            <tr>
+                <td >
+                    <img src="images/dog/ulybaka_01.jpg" alt="dog">
+                </td>
+                <td rowspan="3"> <!--  oб'єднуємо рядки по вертикалі на 3  -->
+                  <img src="images/dog/ulybaka_02.jpg" alt="dog">    
+                </td>
+                <td>
+                   <img src="images/dog/ulybaka_03.jpg" alt="dog"> 
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3"> <!--  oб'єднуємо рядки по вертикалі на 3  -->
+                    <img src="images/dog/ulybaka_04.jpg" alt="dog">
+                </td>
+                <td >
+                    <img src="images/dog/ulybaka_05.jpg" alt="dog">\
+                    
+                </td>
+                
+            </tr>
+            <tr> 
+                <td>
+                    <img src="images/dog/ulybaka_06.jpg" alt="dog">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <!--  oб'єднуємо рядки по горизонталі на 2  -->
+                    <img src="images/dog/ulybaka_07.jpg" alt="dog">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    
+</body>
+</html>
